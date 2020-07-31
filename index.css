@@ -1,0 +1,264 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+#main_page{
+    height: 100vh;
+    padding-top:200px;
+    background-image: url('images/bg3.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+#main_text{
+    margin-top: 5vh;
+}
+
+#intro{
+    margin-top: 50px;
+}
+
+#projects{
+    background-color: rgb(61,61,61);
+
+}
+
+
+
+.item {
+    position:relative;
+    color: #fff;
+    background-color: transparent;
+    padding: 10px;
+    width:250px;
+    border: #fff solid 2px;
+    margin-bottom:10px;
+    display:inline-block;
+    margin: 0px 3px 10px 3px;
+    padding:20px;
+    box-sizing:border-box;
+    text-align:center;
+    text-transform:uppercase;
+    letter-spacing:2px;
+    border-radius:2px;
+    box-shadow:0px 2px 5px rgba(0,0,0,0.5);
+    overflow:hidden;
+}
+
+.item:before {
+  content:'';
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width:30px;
+  height:20px;
+  display:block;
+  margin:0 auto;
+}
+
+.item:after {
+  content: "";
+  display:block;
+  border-top: 0 #fff solid;
+  border-bottom: 15px transparent solid;
+  border-left: 15px #fff solid;
+  position:absolute;
+  top:0;
+  left:0;
+  width:0;
+  z-index:-1;
+  overflow:hidden;
+}
+
+.item:hover:after {
+  z-index:-1;
+  border-left: 302px solid #fff;
+  border-bottom:302px solid transparent;
+  overflow:hidden;
+  background-color:#007766;
+}
+
+
+.item:hover {
+  color:#007766;
+  overflow:hidden;
+  margin-bottom: 10px;
+  cursor:pointer;
+}
+
+.item:hover, .item:after, .item {
+  transition: 0.5s color ease;
+}
+
+
+.item:hover, .item:after {
+  transition: 0.5s border ease;
+}
+
+.item:after {
+    overflow:hidden;
+}
+
+.item:before, .item:hover:before, .item:hover:after {
+  transition: 0.75s all ease;
+}
+
+
+#form-main{
+    width:100%;
+    float:left;
+    padding-top:30px;
+}
+
+#form-div {
+    background-color:#3c3c3c;
+    padding-left:35px;
+    padding-right:35px;
+    padding-top:35px;
+    padding-bottom:50px;
+    width: 520px;
+    float: left;
+    left: 50%;
+    position: absolute;
+    margin-left: -260px;
+}
+
+.feedback-input {
+    opacity:0.9;
+    color:#0493bd;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+  font-weight:400;
+    font-size: 18px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+  border: 3px solid #fbfbfb;
+    padding: 13px 13px 13px 54px;
+    margin-bottom: 10px;
+    width:100%;
+    box-sizing: border-box;
+}
+
+.feedback-input:focus{
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: none;
+  padding: 13px 13px 13px 54px;
+}
+
+.focused{
+    color:#30aed6;
+    border:#30aed6 solid 3px;
+}
+
+/* Icons ---------------------------------- */
+#name{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+}
+
+#name:focus{
+    background-size: 30px 30px;
+    background-position: 8px 5px;
+    background-position: 11px 8px;
+}
+
+#email{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+}
+
+#email:focus{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+}
+
+#comment{
+    background-size: 30px 30px;
+    background-position: 11px 8px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+    background-color:white;
+}
+
+#button-blue{
+    font-family: 'Montserrat', Helvetica, Arial,  sans-serif;
+    float:left;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor:pointer;
+    background-color:#007766;;
+    color:white;
+    font-size:24px;
+    padding-top:22px;
+    padding-bottom:22px;
+    transition: all 0.3s;
+}
+
+#button-blue:hover{
+    background-color: rgba(0,0,0,0);
+    color: #0493bd;
+    height: 100px;
+}
+    
+.submit:hover {
+    color: #3498db;
+}
+    
+.ease {
+  border-top:3px #3c3c3c solid;
+    width: 0px;
+    height: 76px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease{
+  width:100%;
+  background-color:white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div{
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+
+#float_btn{
+    background-color:#585858;
+}
+
+
+.card-image{
+    height: 220px; /* Your height here */
+    overflow: hidden;
+}
+
+
+#brand-logo{
+  font-size: 24px;
+}
+
+
